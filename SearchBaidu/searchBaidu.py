@@ -5,7 +5,7 @@ import urllib2
 
 #传入值和保存路径
 def search(word,filepath):
-	url="http://www.baidu.com/s?";
+	url="http://www.baidu.com/s?"
 
 	user_agent = 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'
 	headers={'User-Agent':user_agent}
@@ -16,4 +16,6 @@ def search(word,filepath):
 	response=urllib2.urlopen(urlf)
 	html=response.read()
 
-	open(filepath,'w').write(html)值
+	open(filepath,'w').write(html)
+
+	return 1
